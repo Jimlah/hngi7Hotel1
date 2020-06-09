@@ -1,0 +1,65 @@
+/*font family */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+/*basic css reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+  min-height: 100vh;
+  font-size: 16px;
+  background: #e5e5e5;
+}
+/*check in section */
+section.checkIn{
+  display :grid;
+  grid-template-columns :1fr ;
+  justify-items:center ;
+  align-items: center ;
+  color:#000;
+  grid-gap: 2.5rem ;
+  padding: 2rem;
+}
+
+
+
+section.grey{
+  margin-top: 2rem ;
+  padding-top: 2rem;
+}
+/*check in image */
+img.checkIn-image{
+  width: 100%;
+  height: auto ;
+}
+
+div.checkIn-writeUp{
+ width: 100%;
+}
+p.checkIn-welcome{
+  width :100%;
+  font-weight: bold ;
+  font-size: 30px;
+  padding-bottom: 0.75rem;
+}
+p.checkIn-para{
+  line-height: 1.5; 
+}
+
+/**********MEDIA QUERIES **********/
+/*tablet**/
+@media all and (min-width:760px){
+  section.grey{
+    grid-template-columns :1fr !important ;
+    grid-column-gap: 3rem ;
+  }
+}
+
+/*laptop*/
+@media all and (min-width:992px){
+  section.grey{
+    grid-template-columns :1fr 1fr!important ;
+    grid-column-gap: 3rem ;
+  }
+}
