@@ -1,0 +1,76 @@
+/*font family */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+/*basic css reset */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+  min-height: 100vh;
+  font-size: 16px;
+
+}
+/*check in section */
+section.checkIn{
+  display :grid;
+  grid-template-columns :1fr ;
+  justify-items:center ;
+  align-items: center ;
+  color:#000;
+  grid-gap: 2.5rem ;
+  padding: 2rem;
+  background: #e5e5e5;
+  width: auto;
+  height: auto;
+}
+
+
+
+section.grey{
+  padding-top: 5%;
+}
+/*check in image */
+img.checkIn-image{
+  width: 412px;
+  height: 281px;
+  text-align: center;
+}
+.container:before{
+  display: none;
+}
+div.checkIn-writeUp{
+ width: 330px;
+}
+#checkIn-welcome{
+  width :100%;
+  font-weight: bold ;
+  font-size: 30px;
+  padding-bottom: 0.75rem;
+  color: black;
+}
+#checkIn-para{
+  line-height: 1.5; 
+  color: black;
+}
+.checkIn-writeUp, .checkIn-image {
+  margin-left: 4%;
+  margin-top: 3%;
+}
+
+/**********MEDIA QUERIES **********/
+/*tablet**/
+@media all and (min-width:760px){
+  section.grey{
+    grid-template-columns :1fr !important ;
+    grid-column-gap: 3rem ;
+  }
+}
+
+/*laptop*/
+@media all and (min-width:992px){
+  section.grey{
+    grid-template-columns :1fr 1fr!important ;
+    grid-column-gap: 3rem ;
+  }
+}
